@@ -27,20 +27,20 @@ def main():
     # frozen_lake_mdp()
 
     # # Runtime and number of iter
-    # mdp_experiments("forest")
-    # mdp_experiments("frozen_lake")
+    mdp_experiments("forest")
+    mdp_experiments("frozen_lake")
 
-    # plot_learned_policy(n_state=25, gamma=0.95, is_slippery=False)
-    # plot_learned_policy(n_state=25, gamma=0.95)
-    # plot_learned_policy(n_state=900, gamma=0.95)
+    plot_learned_policy(n_state=25, gamma=0.95, is_slippery=False)
+    plot_learned_policy(n_state=25, gamma=0.95)
+    plot_learned_policy(n_state=900, gamma=0.95)
 
-    # # forest reward experiments
-    # forest_reward_experiments(n_state=5, r1=10000)
+    # forest reward experiments
+    forest_reward_experiments(n_state=5, r1=10000)
     forest_reward_experiments(n_state=50, r1=10000)
 
     # frozen_lake_experiments(n_state=25, gamma=0.95, is_slippery=False)
-    # frozen_lake_experiments(n_state=25, gamma=0.95)
-    # frozen_lake_experiments(n_state=900, gamma=0.95)
+    frozen_lake_experiments(n_state=25, gamma=0.95)
+    frozen_lake_experiments(n_state=900, gamma=0.95)
 
 
 def plot_learned_policy(n_state=16, gamma=0.95, is_slippery=True):
